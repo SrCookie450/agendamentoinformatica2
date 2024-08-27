@@ -5,17 +5,13 @@
   },
   "routes": [
     {
-      "src": "/api/tutorial.php",
+      "src": "/api/index.php",
       "headers": { "Location": "/tutorial" },
       "status": 307
     },
     {
       "src": "/",
       "dest": "/api/index.php"
-    },
-    {
-      "src": "/tutorial",
-      "dest": "/api/tutorial.php"
     },
     {
       "src": "/public/(.*)",
