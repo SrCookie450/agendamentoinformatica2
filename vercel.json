@@ -1,21 +1,7 @@
 {
-  "version": 2,
   "functions": {
-    "api/*.php": { "runtime": "vercel-php@0.5.2" }
-  },
-  "routes": [
-    {
-      "src": "/api/index.php",
-      "headers": { "Location": "/tutorial" },
-      "status": 307
-    },
-    {
-      "src": "/",
-      "dest": "/api/index.php"
-    },
-    {
-      "src": "/public/(.*)",
-      "dest": "/$1"
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1"
     }
-  ]
+  }
 }
